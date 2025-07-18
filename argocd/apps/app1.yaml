@@ -7,7 +7,7 @@ spec:
   project: default
 
   source:
-    repoURL: https://github.com/jbbain/gitops-repo.git
+    repoURL: https://github.com/jbbain/ci-cd-platform-with-argoCD-and-eks.git
     targetRevision: HEAD
     path: apps/app1
 
