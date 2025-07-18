@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-eks
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hello-eks
+  template:
+    metadata:
+      labels:
+        app: hello-eks
+    spec:
+      containers:
+      - name: hello-eks
+        image: nginx
+        ports:
+        - containerPort: 80
