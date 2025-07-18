@@ -1,4 +1,3 @@
-# app-directory/deployment.yaml
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -12,6 +11,7 @@ spec:
     metadata:
       labels:
         app: hello-world
+        synced: "true"
     spec:
       containers:
         - name: hello-world
